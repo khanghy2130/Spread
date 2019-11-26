@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="./js/lib/p5.min.js"></script>
+		<script src="./js/lib/p5.dom.min.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=600, initial-scale=1.0">
+		<title>Spread</title>
+	</head>
+	<body>
+		<div id = "canvas-container"></div>
+
+		<div id = "options-container">
+			<div>
+				<button id="generate-btn" title="Start new generation">Generate</button>
+				<button id="randomize-btn" title="Randomize the options">Randomize</button>
+				<button id="pause-btn" title="Pause/Resume the program">▐ ▌</button>
+			</div>
+
+			<div>
+				<div class="checkbox-container">
+					<label>Show active</label>
+					<input type="checkbox" id="show-active-box" title="Highlight tiles that are spreading"/>
+				</div>
+				<div class="checkbox-container">
+					<label>Show outline</label>
+					<input type="checkbox" id="show-outline-box" title="Visible borders for tiles"/>
+				</div>
+			</div>
+
+			<div>
+				<label>Tile type: </label>
+				<select id="tile-type">
+					<option value="square">Square</option>
+					<option value="triangle">Triangle</option>
+					<option value="hexagon">Hexagon</option>
+				</select>
+			</div>
+			
+			<div>
+				<label>Number of tiles: 
+					<span id="number-of-tiles-text"></span>
+				</label>
+				<input id="tile-slider" type="range" min="20" max="100" value="20" />
+			</div>
+
+			<div>
+				<label>Number of groups: 
+					<span id="number-of-groups-text"></span>
+				</label>
+				<input id="group-slider" type="range" min="1" max="2" value="1" />
+			</div>
+
+			<div id="colors-container">
+				<input type="color" /><input type="color" />
+				<input type="color" /><input type="color" />
+				<input type="color" /><input type="color" />
+				<input type="color" /><input type="color" />
+				<input type="color" /><input type="color" />
+				<input type="color" /><input type="color" />
+			</div>
+		</div>
+
+		<script src="./js/tile_types.js"></script>
+		<script src="./js/generator_module.js"></script>
+		<script src="./js/options_module.js"></script>
+		<script defer src="./js/main.js"></script>
+	</body>
+</html>

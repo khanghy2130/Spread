@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	touch-action: manipulation;
+	background: #2f2f2f;
+	text-align: center;
+  vertical-align: top;
+	overflow-y: scroll;
+	font-family: 'Odibee Sans';
+}
+
+#canvas-container, #options-container {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 7%;
+  margin: 20px 20px 0 20px;
+
+  width: 500px;
+  min-height: 500px;
+}
+
+#options-container {
+  vertical-align: top;
+}
+
+#options-container > div {
+  margin: 10px;
+}
+
+/* buttons */
+#generate-btn {
+  background-color: #1bf507;
+}
+#randomize-btn {
+  background-color: #ff17bd;
+}
+#pause-btn {
+  background-color: #07bdf5;
+  width: 100px;
+}
+
+.checkbox-container {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  vertical-align: top;
+}
+
+select {
+  margin: 10px;
+  padding: 5px;
+
+  background: #14fa14;
+  font-family: 'Odibee Sans';
+  font-size: 1.7em;
+
+  transition: 0.3s;
+}
+select:hover {
+  transform: translateY(-3px);
+}
+
+#number-of-tiles-text, #number-of-groups-text {
+  display: inline-block;
+  text-align: left;
+  margin-left: 10px;
+  width: 50px;
+  color: yellow;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  padding: 7px;
+  background-color: transparent;
+}
+input[type="range"]::-webkit-slider-runnable-track  {
+  background: #14bdfa;
+  height: 5px;
+  border: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: yellow;
+
+  transition: 0.3s;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  width: 20px;
+  height: 20px;
+  margin-top: -8px;
+}
+
+input[type="color"] {
+  background-color: black;
+  border: none;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  padding: 5px;
+  display: none;
+
+  transition: 0.3s;
+}
+input[type="color"]:hover {
+  transform: translateY(-3px);
+}
+
+
+
+button {
+  border: none;
+  border-radius: 8%;
+  box-shadow: 3px 3px 6px black;
+	margin: 15px;
+  padding: 12px;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  font-family: 'Odibee Sans';
+  font-size: 2.0em;
+  height: 70px;
+
+  transition: 0.3s;
+}
+button:hover {
+  transform: translateY(-5px);
+}
+button:active {
+  transition: none;
+  color: yellow !important ;
+}
+
+label {
+  color: #eee;
+  font-size: 1.7em;
+}
+
+input, button, select {
+  outline: none;
+  cursor: pointer;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
