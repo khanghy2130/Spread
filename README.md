@@ -9,3 +9,7 @@ Challenges faced:
 - Creating algorithm for the generation process: generate base layout then fill out.
 - Implement animations. Making the generation process take place in multiple frames.
 - Create and connect DOM elements for user inputs.
+
+![featured image][img1]
+
+[img1]: https://github.com/khanghy2130/final_portfolio/blob/master/project-images/spread.png "featured image"
